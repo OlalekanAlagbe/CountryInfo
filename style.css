@@ -21,15 +21,10 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(92, 90, 90, 0.429);
 }
-@media screen and (max-width: 600px) {
-    .container{
-        width: 80vw;
-    }
-}
 .search-wrapper{
     display: grid;
     grid-template-columns: 9fr 3fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .search-wrapper button{
@@ -78,7 +73,7 @@ body{
 .container h4{
     display: inline;
     font-weight: 500;
-
+    
 }
 
 .container h3{
@@ -86,4 +81,46 @@ body{
     font-weight: 400;
     color: #ff465a;
     font-size: 1.2em;
+}
+@media screen and (max-width: 600px) {
+    
+    .container{
+        background-color: #ffff;
+        width: 90vw;
+        max-width: 90%;
+        padding: 1.5em 1em;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(92, 90, 90, 0.429);
+    }
+    .search-wrapper{
+        gap: 10px;
+    }
+    .search-wrapper button{
+        font-size: 0.7em;
+        background-color: #ab947e;
+        color: #ffff;
+        padding: 6px;
+        border: none;
+        border-radius: 14px;
+    }
+    
+    .search-wrapper input{
+        font-size: 1em;
+        padding: 0 0.42em;
+        border: none;
+        border-bottom: 2px solid #ab947e;
+        outline: none;
+        color: #593d3b;
+    }
+
+    .container h4, .container span{
+        font-size: 0.8em;
+    }
+    .container h3{
+        font-size: 1em;
+    }
 }
